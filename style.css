@@ -7,12 +7,13 @@ body {
 header {
     background-color: #003366;
     color: #ffffff;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
 }
 
 .logo {
@@ -52,11 +53,17 @@ nav {
 }
 
 main {
-    padding: 90px 20px 20px; /* Ajuste o valor do padding aqui */
+    padding-top: calc(60px + 20px);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 section {
     margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cursos {
@@ -83,12 +90,14 @@ iframe {
 section h2 {
     color: #003366;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 section h3 {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 footer {
@@ -97,4 +106,26 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 18px;
+    }
+    
+    .menu li a {
+        font-size: 12px;
+    }
+    
+    main {
+        padding-top: calc(80px + 20px);
+    }
+    
+    section h2 {
+        font-size: 20px;
+    }
+    
+    section h3 {
+        font-size: 16px;
+    }
 }
