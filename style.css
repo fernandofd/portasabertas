@@ -2,79 +2,90 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
-  }
-  
-  header {
+}
+
+header {
     background-color: #003366;
     color: #ffffff;
     padding: 10px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-  }
-  
-  .logo {
+}
+
+.logo {
     margin-right: 5px;
     margin-left: 50px;
     width: 100px;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav {
-    flex-basis: 100%;
-  }
-  
+}
 
-  
-  .menu {
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+nav {
+    flex-basis: 100%;
+}
+
+.menu {
     list-style-type: none;
     margin-left: 50px;
     padding: 0;
     display: flex;
-  }
-  
-  .menu li {
+}
+
+.menu li {
     margin-right: 10px;
-  }
-  
-  .menu li a {
+}
+
+.menu li a {
     color: #ffffff;
     text-decoration: none;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  .cursos{
-    text-align: center;
-  }
-  
-  .htmlcssjs,.sql,.node{
-    width:200px;
-     height:112px;
-  }
+}
 
-  
-  section h2 {
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.cursos {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.htmlcssjs,
+.sql,
+.node {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+section h2 {
     color: #003366;
     text-align: center;
-  }
+}
 
-  section h3{
+section h3 {
     text-align: center;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #003366;
     color: #ffffff;
     padding: 10px;
     text-align: center;
-  }
+}
